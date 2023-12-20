@@ -1,0 +1,37 @@
+<HTML>
+  <HEAD>
+    <TITLE>FEEDBACK</TITLE>
+ <link rel="stylesheet" href="style1.css">
+  </HEAD>
+  <BODY>
+<a href="home.html"><b>Home</b></a>
+    <H1>Feedback Form</H1>
+    <FORM action="mailto:chetan200314@gmail.com" method="post" enctype="text/plain">
+      First Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="text" name="firstname" placeholder="Enter name here"> <br/>
+     Second Name : <INPUT type="text" name="surname"  placeholder="Enter surname here"> <br>
+      <BR>
+      <BR>
+      <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->  
+      <INPUT type="radio" name="gender" value="male">Male<BR>
+      <INPUT type="radio" name="gender" value="female">Female  
+      <BR>
+      <BR>
+      <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+      email: <INPUT type="email" name="mail" placeholder="e-mail address">
+      <BR>
+      <BR>
+        Comment :<BR>        
+        <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+        <BR>
+        <SELECT name="countychooser">
+          <OPTION value="Wild Animals">Wild Animals</OPTION>
+          <OPTION value="Pet Animals">Pet Animals</OPTION>
+        </SELECT>
+        <BR>
+        <BR>
+        <INPUT TYPE="submit" value="Send Feedback">
+        <INPUT TYPE="reset" value="Reset">
+    </FORM>
+    
+  </BODY>  
+</HTML>
